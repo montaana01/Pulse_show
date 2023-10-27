@@ -1,0 +1,24 @@
+@media (max-width:1200px) {
+    .promo {
+        &__header {
+            font-size: 38px;
+            line-height: 38px;
+        }
+
+        &__subheader {
+            font-size: 22px;
+            line-height: 22px;
+        }
+
+    }
+}
+
+@media (max-width:991px) {
+    .container {
+        max-width: 850px;
+    }
+
+    .promo {
+        min-height: 500px;
+    }
+}
