@@ -1,23 +1,3 @@
-/* $(document).ready(function () {
-    $('.carousel__inner').slick({
-        speed: 600,
-        centerMode: true,
-        adaptiveHeight: false,
-        variableWidth: true,
-        prevArrow: '<button type="button" class="slick-prev"><img src="icons/carousel/prev.svg"></button>',
-        nextArrow: '<button type="button" class="slick-next"><img src="icons/carousel/next.svg"></button>',
-        responsive: [
-            {
-                breakpoint: 992,
-                settings: {
-                    dots: true,
-                    arrows: false
-                }
-            }
-        ]
-    });
-}); */
-
 const slider = tns({
     container: '.carousel__inner',
     items: 1,
@@ -26,11 +6,17 @@ const slider = tns({
     nav: false,
     controls: false,
     responsive: {
+        320: {
+            items: 1
+        },
         640: {
-            items: 2
+            items: 1
         },
         900: {
             items: 1
+        },
+        1200: {
+
         }
     }
 });
