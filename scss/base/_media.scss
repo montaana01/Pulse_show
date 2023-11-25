@@ -45,6 +45,14 @@
         min-height: 800px;
         margin-top: 20px;
     }
+
+    .footer {
+        height: 530px;
+
+        &__info {
+            width: 360px;
+        }
+    }
 }
 
 @media (max-width:991px) {
@@ -245,7 +253,14 @@
 
     }
 
+    .footer {
+        height: 400px;
 
+        &__info {
+            width: 300px;
+            padding: 40px 30px;
+        }
+    }
 }
 
 @media (max-width:575px) {
@@ -482,6 +497,24 @@
                 margin-top: 10px;
             }
 
+        }
+    }
+
+    .footer {
+        height: 500px;
+
+        &__info {
+            width: 80%;
+            height: 210px;
+            padding: 20px;
+        }
+
+        &__location {
+            margin-bottom: 26px;
+        }
+
+        &__phone {
+            margin-bottom: 26px;
         }
     }
 }
