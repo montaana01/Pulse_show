@@ -50,6 +50,17 @@
     &_mini {
         min-height: 140px;
     }
+
+    .error {
+        border: 1px solid red;
+        text-align: center;
+        font-size: 12px;
+    }
+
+    label.error {
+        border: none;
+        margin-bottom: 15px;
+    }
 }
 
 #consultation,

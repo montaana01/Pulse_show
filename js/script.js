@@ -66,7 +66,34 @@ $(document).ready(function () {
             $('.overlay, #order').fadeIn('slow');
         })
     });
-    $('.button_submit').on('click', function () {
-        $('.overlay, #thanks').fadeIn('slow');
-    })
+    /*     $('.button_submit').on('click', function () {
+            $('.overlay, #thanks').fadeIn('slow');
+        }) */
+
+    function validateForms(form) {
+        $(form).validate({
+            rules: {
+                name: "required",
+                phone: "required",
+                email: {
+                    required: true,
+                    email: true
+                }
+            },
+            messages: {
+                name: "Введите ваше имя",
+                phone: "Пожалуйста введите номер телефона",
+                email: {
+                    required: "Введите Ваш email, чтобы мы связались с вами",
+                    email: "Ваш почтовый адресс указан с ошибкой!"
+                }
+            }
+        });
+    }
+
+    validateForms('#consultation-form');
+    validateForms('#consultation form');
+    validateForms('#order form');
+
+    $('input[name=phone]').mask("+375 (99) 999-99-99");
 });
