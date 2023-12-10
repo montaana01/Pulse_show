@@ -66,9 +66,6 @@ $(document).ready(function () {
             $('.overlay, #order').fadeIn('slow');
         })
     });
-    /*     $('.button_submit').on('click', function () {
-            $('.overlay, #thanks').fadeIn('slow');
-        }) */
 
     function validateForms(form) {
         $(form).validate({
@@ -81,19 +78,54 @@ $(document).ready(function () {
                 }
             },
             messages: {
-                name: "Введите ваше имя",
+                name: "Введите Ваше имя",
                 phone: "Пожалуйста введите номер телефона",
                 email: {
-                    required: "Введите Ваш email, чтобы мы связались с вами",
+                    required: "Введите Ваш email, чтобы мы связались с вами!",
                     email: "Ваш почтовый адресс указан с ошибкой!"
                 }
             }
         });
-    }
+    };
 
     validateForms('#consultation-form');
     validateForms('#consultation form');
     validateForms('#order form');
 
-    $('input[name=phone]').mask("+375 (99) 999-99-99");
+    $('input[name=phone]').mask("+7 (999) 999-99-99");
+
+    $('form').submit(function(e) {
+        e.preventDefault();
+        if (!$(this).valid()) {
+            return;
+        }
+
+        $.ajax({
+            type: "POST",
+            url: "mailer/smart.php",
+            data: $(this).serialize()
+        }).done(function() {
+            $(this).find("input").val("");
+            $('#consultation, #order').fadeOut();
+            $('.overlay, #thanks').fadeIn('slow');
+            $('form').trigger('reset');
+        });
+        return false;
+    });
+
+    //Smooth scroll and PageUp
+
+    $(window).scroll(function(){
+        if($(this).scrollTop() > 1600) {
+            $('.pageup').fadeIn();
+        } else {
+            $('.pageup').fadeOut();
+        }
+    })
+
+    $("a[href^='#']").click(function(){
+        const _href = $(this).attr("href");
+        $("html, body").animate({scrollTop: $(_href).offset().top+"px"});
+        return false;
+    });
 });
