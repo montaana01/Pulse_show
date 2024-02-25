@@ -564,7 +564,7 @@
                 Пульсометр Polar FT1
             </div>
 
-            <form class="feed-form feed-form_mt25" action="#">
+            <form class="feed-form feed-form_mt25" action="smart.php">
                 <input name="name" placeholder=" Ваше имя" type="text">
                 <input name="phone" placeholder=" Ваш телефон">
                 <input name="email" placeholder=" Ваш E-mail" type="email">
