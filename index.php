@@ -8,8 +8,7 @@
     <title>Pulse</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@300;400;500;700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="icon/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="fonts/icomoon.ttf">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
@@ -460,8 +459,7 @@
         <div class="container">
             <h2 class="title">отзывы клиентов</h2>
 
-            <div class="feedback-item animate__fadeInUp animate__animated wow" data-wow-duration="2s"
-                data-wow-delay="1s">
+            <div class="feedback-item animate__fadeInUp animate__animated wow" data-wow-duration="2s" data-wow-delay="1s">
                 <div class="feedback-item__block">
                     <img src="img/reviev/clien_irina.png" alt="Irina">
                     <div class="feedback-item__text">
@@ -478,8 +476,7 @@
                 </div>
             </div>
 
-            <div class="feedback-item animate__fadeInUp animate__animated wow" data-wow-duration="1.5s"
-                data-wow-delay="1s">
+            <div class="feedback-item animate__fadeInUp animate__animated wow" data-wow-duration="1.5s" data-wow-delay="1s">
                 <div class="feedback-item__block">
                     <img src="img/reviev/clien_ivan.png" alt="Ivan">
                     <div class="feedback-item__text">
@@ -497,8 +494,7 @@
                 </div>
             </div>
 
-            <div class="feedback-item animate__fadeInUp animate__animated wow" data-wow-duration="2s"
-                data-wow-delay="1s">
+            <div class="feedback-item animate__fadeInUp animate__animated wow" data-wow-duration="2s" data-wow-delay="1s">
                 <div class="feedback-item__block">
                     <img src="img/reviev/clien_yulia.png" alt="clien_yulia">
                     <div class="feedback-item__text">
@@ -521,10 +517,7 @@
 
     <footer class="footer">
         <div class="footer_map">
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2244.43030788928!2d37.64442107712951!3d55.768397990789545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a636edcd2ad%3A0x4c2ca101e2c8c617!2z0JzRj9GB0L3QuNGG0LrQuNC5INC_0YAt0LQsIDQvMywg0JzQvtGB0LrQstCwLCDQoNC-0YHRgdC40Y8sIDEwNzA3OA!5e0!3m2!1sru!2sby!4v1700907886047!5m2!1sru!2sby"
-                style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2244.43030788928!2d37.64442107712951!3d55.768397990789545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a636edcd2ad%3A0x4c2ca101e2c8c617!2z0JzRj9GB0L3QuNGG0LrQuNC5INC_0YAt0LQsIDQvMywg0JzQvtGB0LrQstCwLCDQoNC-0YHRgdC40Y8sIDEwNzA3OA!5e0!3m2!1sru!2sby!4v1700907886047!5m2!1sru!2sby" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
         <div class="footer__info">
             <address class="footer__location">Москва, Мясницкий проезд, д.3с1</address>
@@ -595,7 +588,7 @@
         <img src="icon/arrow_up.svg" alt="up">
     </a>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/jquery.maskedinput.js"></script>
     <script src="js/wow.min.js"></script>
